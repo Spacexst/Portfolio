@@ -1,0 +1,12 @@
+.navbar{
+  background-color: black;
+  height: 20vh;
+  color: rgb(220, 39, 39);
+}
+.navbar-brand{
+  color: azure;
+}
+.pic{
+  height: 30px;
+  width: 100px;
+}

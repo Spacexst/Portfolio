@@ -1,0 +1,11 @@
+@mixin transition($property...) {
+  transition: $property 0.3s ease-in-out;
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == md {
+    @media (min-width: 768px) { @content; }
+  } @else if $breakpoint == lg {
+    @media (min-width: 1024px) { @content; }
+  }
+}
