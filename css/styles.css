@@ -1,10 +1,10 @@
 .navbar{
   background-color: black;
   height: 20vh;
-  color: rgb(220, 39, 39);
+  color: #e4dcdc;
 }
 .navbar-brand{
-  color: azure;
+  color: rgb(15, 171, 171);
 }
 .profile-image{
   height: 100px;

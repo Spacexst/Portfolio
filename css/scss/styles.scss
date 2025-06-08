@@ -7,9 +7,10 @@ body {
 }
 
 
+
 .navbar {
   @include transition(all);
-  background-color: white;
+  background-color: rgb(15, 205, 91);
 }
 
 .overlay {
