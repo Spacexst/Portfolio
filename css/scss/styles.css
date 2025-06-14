@@ -1,0 +1,23 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+.navbar {
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(15, 205, 91);
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=styles.css.map */

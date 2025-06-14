@@ -1,123 +1,122 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Jane Doe - Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css"/>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewpoint" content="width=device-width" initial-scale="1.0">
+  
+<title>Portfolio</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <link rel="stylesheet" href="./styles.scss"/>
     <script src="js/script.js"></script>
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-      <div id="home">
-        <div class="profile_name">
-          Anuradha Mangalpalli
-          <div class="contact_info">
-            <img class="pic" src="" alt=""/>
-          amang@gmail.com
-        </div>
-        <div class="contact_info">
-          <img src=""/>
-          https://www.linkedin.com/search/results/people/?firstName=Anuradha&lastName=Mangalpalli&origin=SEO_PSERP&sid=SYS
-      </div>
-        
-        </div>
-        <div class="topdiv">
-          <a class="topmenu" href="#about-me">About Me</a>
-          <!-- Add the links for Skills, Projects and Recommendation here -->
-          <a class="topmenu" href="#skills">Skills</a>
-          <a class="topmenu" href="#Work Experience">Work Experience</a>
-          <a class="topmenu" href="#Hobbies and Interests">Hobbies and Interests</a>
-        </div>
-      </div>    
-    </nav>
-
-    <!-- About Me -->
-    <section id="about-me" class="container">
-      <div>
-        <img class="profile-image" src="Anu (1).jpeg"/>
-      </div>
-
-      <div>
-          <h1>
-            Hi, I'm Anuradha Mangalpalli 
-          </h1>
-          <p>
-            Hi
-          </p>
-          
-      </div>
-    </section>
-              
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-     
-      <!-- Add more skills here -->
-        <div class="skill">
-          <h3>HTML5, CSS3, JAVASCRIPT</h3>
-          
-          
-        </div>
-       <div class="skill">
-          
-        </div>
-        <div class="skill">
-          
-        </div>
-        <div class="skill">
-         
-        </div>
-        <div class="skill">
-          
-        </div>  
-      </div>
-    </section>
-          
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <h2>
-        Experiences
-      </h2>
-     
-  <div id="projects-container" class="projects-container">
-          
-          <hr>
-         
+    <div class="fade-overlay" id="overlay">
+      <h2>Welcome to my Portfolio</h2>
     </div>
-    </section>
-    
+    <header class="bg-primary text-white text-center p-4">
+      <h1>Anuradha Mangalpalli</h1>
+      <p>Web developer and designer</p>
+  </header>
+    <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top"></nav>
+    <div class="container">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse-navbar-collapse" id="#navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#aboutme">About me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+         <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#work experience">Work experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+       </ul>
+       </div>
+    </div>
 
-    <!-- Recommendations -->
+    <main class="container" py-5>
+      <section id="about" class="mb-5">
+        <article>
+          <h2>About me</h2>
+          <p>I am a web developer with a strong passion for building clean and responsive user interfaces. With a background in software development and a keen eye for design, I bring technical and creative skills together</p>
+        </article>
+       </section>
+
+       <section id="Education" class="mb-5">
+        <article>
+          <h2>Education</h2>
+          <p>I have a Masters and Doctoral degree in Psychology and at present pursuing a Bachelor in Applied Information Technology degree from Whitecliffe college.</p>
+        </article>
+       </section>
+
+       <section id="projects" class="mb-5">
+        <article>
+          <h2>Projects</h2>
+          <div class="row">
+            <div class="col=md-4">
+              <img src="" class="img-fluid" alt="Project1">
+              <h5>Project1</h5>
+              <p>A movie app</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+             <img src="" class="img-fluid" alt="Project1">
+              <h5>Project2</h5>
+              <p>A mobile app</p>
+             </div>
+        </article>
+       </section>
+
+       <section id="contact" class="mb-5">
+        <article>
+          <h2>Contact</h2>
+          <form class="row g-3" action="#" method="post">
+            <div class="col md-6">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="Name" required>
+            </div>
+           <div class="col-md-6">
+              <label for="email" class="form-label" >Email</label>
+              <input type="text" class="form-control" id="email" name="Email" >
+             </div>
+            <div class="col-md-12">
+              <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="Message" rows="5" required>
+                </textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Send message</button>
+
+              </div>
+             </form>
+          </article>
+        </section>
+       </main>
+
+      <footer class="bg-dark text-white text-center p-3">
+        <h4>& copy Anuradha Mangalpalli 2025. All rights reserved</h4>
+      </footer>
+       <script>
+    $(document).ready(function () {
+      $('#overlay').fadeIn(1000).delay(2000).fadeOut(1000);
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ <!-- Recommendations -->
     <section id="">
       
     </section>
 
     
-    <section id="contact">
-      <div class="flex_center">
-        <fieldset>
-                 
-         
-        </fieldset>
-      </div>
-    </section>
-
-    <div class="iconbutton">
-      <a href="#home">
-        <!--Add the code here for the logo to appear and the icon to be actionable-->
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      </a>
-    </div>
-
-    <div class="popup" id="popup" class="flex_center">
-      <img src=""/>
-      <h3>
+    
+      <h4>
         Thanks for visiting my page
-      </h3>
-      
-    </div>
+      </h4>
+     </div>
   </body>
 </html>
